@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-146052-10']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" class="theme--barley">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="pull-left logo" href="./index.html" data-barley="logo_text" data-barley-editor="simple">
+            <h2><img src="assets/img/site/barley-logo-white.png" alt="">Barley Documentation</h2>
+          </a>
+          <div class="nav-collapse collapse pull-right">
+            <ul class="nav">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="guides.html">Guides</a></li>
+              <li><a href="videos.html">Videos</a></li>
+              <li><a href="#contactModal" data-toggle="modal">Contact Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Submit a request</h3>
+      </div>
+      <div class="modal-body">
+
+        <form class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Your Email Address</label>
+            <div class="controls">
+              <input type="text" class="span3" id="inputEmail" placeholder="Email">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Description of Issue</label>
+            <div class="controls">
+              <textarea rows="9" class="span3" id="inputMess" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+
+<div class="container">
+  <div class="row">
+    <div class="span8 offset2">
+      <div class="box box--main guides faq">
+        
+        <h2>FAQ - building Barley Templates</h2>
+
+        <p>We are going to continue to keep our documentation up-to-date but sometimes we get questions. Here are the answers the most frequently asked questions.</p>
+
+        
+        <h4><a class="anchor" name="faq-editor">Editor Questions</a></h4>
+
+        <article>
+          <h5>How does Barley know what can be edited?</h5>
+
+          <p>Barley reads HTML attributes on all elements to decide what can be edited and what editor to present the user. Any HTML tag that has a data-barley attribute and a data-barley-editor attribute will be editable. Barley will use the value provided in the data-barley attribute as the key to save data to and the value of the data-barley-editor attribute to decide what editor to present. Please read <a href="/docs/editor">the editor documentation for more information</a>.</p>
+        </article>
+
+        <article>
+          <h5>Can I use the same data-barley attribute on multiple pages?</h5>
+
+          <p>Yes you can. If it’s updated on one page, it will be updated on all pages. This can be useful for phone numbers, addresses, footer information, etc.</p>
+        </article>
+
+        <article>
+          <h5>Can I nest multiple editable elements together?</h5>
+          <p>No. If you do this the most parent one will take over everything and overwrite your data. Please stay away from this.</p>
+        </article>
+
+
+        <h4><a class="anchor" name="faq-nav">Navigation Questions</a></h4>
+
+        <article>
+          <h5>Can I create two separate navigation menus?</h5>
+          <p>If your site or template requires more than one navigation menu you will need to manage those menus yourself using Dropbox sync. Barley can only manage one navigation menu. Please read <a href="/docs/navigation">the navigation document for more information</a>.</p>
+        </article>
+
+        <article>
+          <h5>What is someone removes a page from their navigation?</h5>
+          <p>Barley saves whatever pages are in the navigation menu when it is imported. If someone deletes a link to a page from their navigation they can always bring it back by using the Barley Navigation Editor.</p>
+        </article>
+
+        <h4><a class="anchor" name="faq-pages">Pages Questions</a></h4>
+
+        <article>
+          <h5>Can I have both static HTML pages and Barley managed Pages?</h5>
+          <p>Yes. Any .html file you submit to Barley will become a page. Please see <a href="/docs/pages">the Pages document</a> for more information.</p>
+        </article>
+
+        <article>
+          <h5>Can I restore a Page that has been deleted?</h5>
+          <p>No. But we might be able to. Please contact support.</p>
+        </article>
+
+        <h4><a class="anchor" name="faq-forms">Forms Questions</a></h4>
+
+        <article>
+          <h5>Can I use forms from MailChimp, Wufoo, or any other service?</h5>
+          <p>Yes! You can embed forms for any service you'd like. You can use the script embed tool in <a href="/docs/editor">the Advanced Barley Editor</a> or you can sync with Dropbox.</p>
+        </article>
+
+        <h4><a class="anchor" name="faq-frameworks">Frameworks Questions</a></h4>
+
+        <article>
+          <h5>What HTML, JavaScript or CSS frameworks can I use?</h5>
+          <p>You can use any frameworks you'd like with your Barley template. Include them like you would normally.</p>
+        </article>
+
+        <h4>Default Content Questions</h4>
+        
+        <article>
+          <h5>How can I show the end-user example content?</h5>
+          <p>The best way to show the end-user some example content in your template is to include it with your template. They can always remove it later. Look to <a href="http://github.com/plainmade">our open source templates</a> as a guide.</p>
+        </article>
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+</div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right">Theme made just for Barley.</p>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+
+    <!-- Analytics
+    ================================================== -->
+    <script>
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-146052-10']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="pull-left logo" href="./index.html" data-barley="logo_text" data-barley-editor="simple">
+            <h2>Formation</h2>
+          </a>
+          <div class="nav-collapse collapse pull-right">
+            <ul class="nav">
+              <li>
+                <a href="./index">Home</a>
+              </li>
+              <li class="">
+                <a href="./about">About</a>
+              </li>
+              <li class="">
+                <a href="./contact">Contact</a>
+              </li>
+              <li class="">
+                <a href="./blog">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="container">
+
+  <div class="row pg-title">
+    <div class="span12 hero-text" data-barley="contact_title" data-barley-editor="mini">
+      <h1>Let's Talk</h1>
+      <span class="kicker">This is the kicker that will provide a bit more detial.</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span8">
+      <p>We'd love to hear from you so please fill out the form below and we'll get back with you as soon as possible.</p>
+      <div class="well">
+        <div id="barley-form" class="row">
+          <div class="span3">
+            <input type="hidden" name="to" id="to" value="youremail@yourdomain.com" />
+            <input type="hidden" name="subject" id="to" value="Contact Form Submission" />
+            <input type="hidden" name="response_success" id="response_success" value="Thanks, we got it!" />
+            <input type="hidden" name="response_error" id="response_error" value="Sorry Chap, please try again." />
+          
+            <label>Your Name:*</label>
+            <input type="text" id="name" placeholder="Jane Smith (required)" data-required="true" />
+
+            <label>Your Email:*</label>
+            <input type="text" id="email" placeholder="jane@smithco.com (required)" data-required="true" />
+
+            <label class="inline">Your Phone:</label>
+            <input type="text" name="phone" placeholder="555-555-1234" />
+
+            <br>
+
+            <input type="button" value="Submit Form" id="barley-submit" class="button" />
+          </div>
+
+          <div class="span4">
+            <label class="inline">Message:</label>
+            <textarea rows="12"></textarea>
+          </div>
+        </div>
+        <div id="barley-form-message" style="display:none;">MESSAGE HERE</div>
+      </div>
+    </div>
+
+    <div class="span4" data-barley="contact_info" data-barley-editor="plus">
+      <h3>Reach Us At</h3>
+
+      <address>
+        P +1.800.123.4567 <br>
+        F +1.800.123.4567<br>
+        example@acme.com<br>
+        @exampleTwitter
+      </address>
+
+      <h3>Located At</h3>
+      <address>
+        117 E 6th St. <br>
+        Bloomington, IN 47408
+      </address>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="map">
+  
+  <iframe width='100%' height='300' frameBorder='0' src='http://a.tiles.mapbox.com/v3/internetaaron.map-3ohi3w7u.html#16/39.16740000000001/-86.53399999999995'></iframe>
+
+</div>
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right">Theme made just for Barley.</p>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+
+    <!-- Analytics
+    ================================================== -->
+    <script>
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+
+  </body>
+</html>

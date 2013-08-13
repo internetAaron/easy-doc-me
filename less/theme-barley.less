@@ -1,0 +1,91 @@
+@link-color:  		#78A5B4;
+@barley-gold: 		#EFD66D;
+@brown: 			#403D36;
+@brown-dark:  		#383630;
+@brown-medium: 		#46433D;
+@brown-light:       #7B7975;
+@barley-off-white:  #FAFAF7;
+
+body {
+	&.theme--barley {
+		color: @brown;
+
+		background-image: -o-linear-gradient(-90deg, #F8EFC3 0%, #FAF9F2 9%, #FAFAF7 100%);
+		background-image: -moz-linear-gradient(-90deg, #F8EFC3 0%, #FAF9F2 9%, #FAFAF7 100%);
+		background-image: -webkit-linear-gradient(-90deg, #F8EFC3 0%, #FAF9F2 9%, #FAFAF7 100%);
+		background-image: -ms-linear-gradient(-90deg, #F8EFC3 0%, #FAF9F2 9%, #FAFAF7 100%);
+		background-image: linear-gradient(-180deg, #F8EFC3 0%, #FAF9F2 9%, #FAFAF7 100%);
+
+		p {
+			color: @brown-light;
+		}
+
+		h5 {
+			font-size: 1.5em;
+		}
+
+		.navbar .navbar-inner {
+			background: #46433B;
+			background-image: -o-linear-gradient(-90deg, #46433D 0%, #383630 100%);
+			background-image: -moz-linear-gradient(-90deg, #46433D 0%, #383630 100%);
+			background-image: -webkit-linear-gradient(-90deg, #46433D 0%, #383630 100%);
+			background-image: -ms-linear-gradient(-90deg, #46433D 0%, #383630 100%);
+			background-image: linear-gradient(-180deg, #46433D 0%, #383630 100%);
+			border-bottom: 3px solid darken(@brown-dark, 12%);
+			.border-radius(0);
+			margin-bottom: 2.0em;
+			
+
+			h2, a {
+				color: #FAFAF7 !important;
+				text-shadow: none;
+			}
+
+			a.logo h2 {
+				font-size: 1.5em;
+				padding-top: 0.3em;
+
+				img {
+					padding-right: 0.5em;
+					position: relative;
+					bottom: 0.2em;
+				}
+			}
+
+			.nav li a:hover {
+				background: darken(@brown,12%);
+			}
+
+			.container {
+				padding: 0;
+			}
+		}
+
+		a {
+			color: @link-color;
+		}
+
+
+		.box a article h3 {
+			color: @link-color;
+		}
+
+		.footer {
+			border-top: none;
+			background: @barley-off-white;
+		}
+
+		.modal-backdrop {
+			background-color: #3B3832;
+		}
+	}
+	.box {
+		border: none;
+		-webkit-border-radius: 0px 0px 3px 3px;
+        border-radius: 0px 0px 3px 3px;
+
+		&.box--main {
+			border-top: 10px solid @brown;
+	    }
+	}
+}

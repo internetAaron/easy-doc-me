@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-146052-10']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" class="theme--barley">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="pull-left logo" href="./index.html" data-barley="logo_text" data-barley-editor="simple">
+            <h2><img src="assets/img/site/barley-logo-white.png" alt="">Barley Documentation</h2>
+          </a>
+          <div class="nav-collapse collapse pull-right">
+            <ul class="nav">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="guides.html">Guides</a></li>
+              <li><a href="videos.html">Videos</a></li>
+              <li><a href="#contactModal" data-toggle="modal">Contact Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Submit a request</h3>
+      </div>
+      <div class="modal-body">
+
+        <form class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Your Email Address</label>
+            <div class="controls">
+              <input type="text" class="span3" id="inputEmail" placeholder="Email">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Description of Issue</label>
+            <div class="controls">
+              <textarea rows="9" class="span3" id="inputMess" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+
+    
+
+<div class="container">
+  <div class="row">
+    
+    <div class="span3 link-list">
+      <h4>News and Updates</h4>
+      <ul class="faq-list">
+        <li><a>Required Template Files</a></li>
+        <li><a>Recommended Folder Structure</a></li>
+        <li><a>Sample Template Structure</a></li>
+        <li><a>UTF-8 Compatibility</a></li>
+      </ul>
+    </div>
+
+
+    <div class="span9">
+      <div class="box box--main guides">
+        <div class="sort-bar">
+          <h3>Creating Templates</h3>
+        </div>
+
+        <p>So you want to create a template for Barley? Great! Barley templates use nothing more than HTML, CSS and JavaScript. No need to learn any new languages or how a conditional works, just design a static site and we’ll do our best to figure out the rest for you.</p>
+
+        <h4>Required Template Files</h4>
+        <p>There is only one required file to get you up and running, an index.html file. That is the bare minimum to create a Barley template. But we're guessing you are going to want more than just a single page. Each HTML file you add to your site becomes a page on your site. So about.html becomes yoursite.com/about</p>
+
+        <p>We've reserved a few HTML filenames for special purposes. You'll find those below.</p>
+
+        <h4>Recommended Folder Structure (not required)</h4>
+        <p>Although the following folder structure <em>is not required</em> we recommend you following this recommended folder structure. This allows us to help you debug issues when support is needed.</p>
+
+        <ul><li>/javascripts/</li>
+          <li>/stylesheets/</li>
+          <li>/fonts/</li>
+          <li>/images/</li>
+        </ul>
+
+        <h4>Sample Template Structure</h4>
+        <p>Below is a sample template structure that could be replicated for your own template. If you would like to take a look at some our Barley template files, you can do so by reviewing some of <a href="http://github.com/plainmade">the templates we've open sourced on GitHub</a>.</p>
+
+        <table><tr><th>Filename</th>
+            <th>Description</th>
+          </tr><tr><td>index.html</td>
+            <td>The main page of your template.</td>
+          </tr><tr><td>about.html</td>
+            <td>An about page for your site. /about/</td>
+          </tr><tr><td>404.html</td>
+            <td>If someone ends up at the wrong URL, this page loads.</td>
+          </tr><tr><td>favicon.ico</td>
+            <td>Your site's favicon. How about a kitty? Meow!</td>
+          </tr></table><p>Your site is in no way limited to the above. But this is a great place to start. What's next? How about adding a blog to your site, or using Barley to manage new pages, or changing advanced settings?</p>
+
+        <h4>UTF-8 Compatibility</h4>
+        <p>Barley supports UTF-8. We save all data using this content-type. To ensure that your site is also UTF-8 compatible we ask that you include the following meta tag in-between your opening &lt;head&gt; and closing &lt;/head&gt; tags.</p>
+
+
+<pre><code>&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+&lt;/head&gt;</code></pre>
+
+<a href="/templates" class="try-link show-for-small">Start Free Trial <i class="barley-icon-angle-right"></i></a>
+
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right">Theme made just for Barley.</p>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+
+    <!-- Analytics
+    ================================================== -->
+    <script>
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+
+  </body>
+</html>
